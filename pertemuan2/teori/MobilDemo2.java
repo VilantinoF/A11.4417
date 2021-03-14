@@ -5,10 +5,9 @@ public class MobilDemo2 {
 
         // memanggil atribut dan memberi nilai
         bike.cekMesin(true);
-        bike.gantiGigi(1);
-        // Memanggil method dan menunjuk nilai parameter
-        bike.gantiGigi(2);
-
+        bike.gantiGigiUp();
+        bike.gantiGigiUp();
+        bike.gantiGigiDown();
         bike.cekMesin(false);
     }
 }
