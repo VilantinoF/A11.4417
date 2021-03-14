@@ -5,12 +5,10 @@ public class MobilDemo2 {
 
         // memanggil atribut dan memberi nilai
         bike.cekMesin(true);
-        bike.cekSpeed(10);
-        bike.gerShift(1);
+        bike.gantiGigi(1);
         // Memanggil method dan menunjuk nilai parameter
-        bike.Kecepatan(10);
-        bike.gantigigi(2);
+        bike.gantiGigi(2);
 
-        bike.kondiimesin(false);
+        bike.cekMesin(false);
     }
 }
