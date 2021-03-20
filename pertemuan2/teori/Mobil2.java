@@ -1,7 +1,6 @@
 public class Mobil2 {
     String warna;
     int tahunProduksi;
-    int speed = 0;
     int gear = 0;
     boolean a = true;
 
