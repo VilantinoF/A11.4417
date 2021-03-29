@@ -3,38 +3,44 @@ public class GameEnemy {
     int positionX, positionY;
 
     GameEnemy() {
-        }
+    }
 
     GameEnemy(double width, double height) {
-    
-        }
+        this.width = width;
+        this.height = height;
+    }
 
     GameEnemy(double width, double height, int positionX, int positionY) {
-    
-        }
+        this.width = width;
+        this.height = height;
+        this.positionX = positionX;
+        this.positionY = positionY;
+    }
 
     public void setDimension(double width, double height) {
-
+        this.width = width;
+        this.height = height;
     }
 
     public void setPosition(int positionX, int positionY) {
-
+        this.positionX = positionX;
+        this.positionY = positionY;
     }
 
     public double getWidth() {
-        return 10.0;
+        return width;
     }
 
     public double getHeight() {
-        return 10.0;
+        return height;
     }
 
     public int getX() {
-        return 10;
+        return positionX;
     }
 
     public int getY() {
-        return 10;
+        return positionY;
     }
 
     void Run() {
@@ -42,7 +48,7 @@ public class GameEnemy {
     }
 
     void Run(int incrementX) {
-        positionX = incrementX + 30;
+        positionX = positionX + incrementX;
     }
 
 }

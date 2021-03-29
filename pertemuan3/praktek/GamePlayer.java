@@ -1,40 +1,47 @@
 public class GamePlayer {
     double width, height;
-    int positionX = 60, positionY;
+    int positionX;
+    int positionY;
 
     GamePlayer() {
     }
 
     GamePlayer(double width, double height) {
-
+        this.width = width;
+        this.height = height;
     }
 
     GamePlayer(double width, double height, int positionX, int positionY) {
-
+        this.width = width;
+        this.height = height;
+        this.positionX = positionX;
+        this.positionY = positionY;
     }
 
     public void setDimension(double width, double height) {
-
+        this.width = width;
+        this.height = height;
     }
 
     public void setPosition(int positionX, int positionY) {
-
+        this.positionX = positionX;
+        this.positionY = positionY;
     }
 
     public double getWidth() {
-        return 10.0;
+        return width;
     }
 
     public double getHeight() {
-        return 10.0;
+        return height;
     }
 
     public int getX() {
-        return 10;
+        return positionX;
     }
 
     public int getY() {
-        return 10;
+        return positionY;
     }
 
     void Run() {
