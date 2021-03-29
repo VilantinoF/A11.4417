@@ -25,7 +25,7 @@ public class GameEnvironment {
     }
 
     public void getAllPlayer() {
-        System.out.println(arrPlayer);
+        System.out.println("All player : " + arrPlayer);
     }
 
     public void addEnemy(GameEnemy Enemy) {
@@ -47,12 +47,17 @@ public class GameEnvironment {
         for (int i = 0; i < arrEnemy.size(); i++) {
             int j = 0;
             while (j < arrEnemy.size()) {
+                // debugging
+                // System.out.println("X1" + arrPlayer.get(i).getX());
+                // System.out.println("Y1" + arrPlayer.get(i).getY());
+                // System.out.println("X2" + arrEnemy.get(j).getX());
+                // System.out.println("Y2" + arrEnemy.get(j).getY());
                 if (arrPlayer.get(i).getY() != arrEnemy.get(j).getY()) {
                     System.out.println("Player : " + arrPlayer.get(i) + " and Enemy : " + arrEnemy.get(j)
                     + " not in the same Y position");
                 }
                 if (EuclideanDistance(arrPlayer.get(i).getX(), arrPlayer.get(i).getY(), arrEnemy.get(j).getX(),
-                arrEnemy.get(i).getY()) < 15) {
+                arrEnemy.get(i).getY()) < 2) {
                     System.out.println("Player : " + arrPlayer.get(i) + " Attacked");
                     System.out.println("Enemy : " + arrEnemy.get(j) + " loses");
                 } else {
@@ -68,7 +73,7 @@ public class GameEnvironment {
     }
 
     public double EuclideanDistance(int x1, int y1, int x2, int y2) {
-        double distance = Math.sqrt(Math.pow((x1 - y1), 2) + Math.pow((x2 - y2), 2));
+        double distance = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         System.out.println(distance);
         return distance;
 
