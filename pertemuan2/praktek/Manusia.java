@@ -13,6 +13,10 @@ public class Manusia {
         System.out.println(nama);
     }
 
+    public String getNama() {
+        return nama;
+    }
+
     void beliTV() {
         punyaTV = true;
     }
@@ -27,7 +31,8 @@ public class Manusia {
 
     public static void main(String[] args) {
         Manusia man1 = new Manusia("Erik");
-        man1.namaSaya();
+        // man1.namaSaya();
+        man1.getNama();
         TestTV tvku = new TestTV();
         man1.beliTV();
         man1.cekTV();
