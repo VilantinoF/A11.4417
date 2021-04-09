@@ -12,12 +12,6 @@ public class MotorVehicle extends Vehicle {
 
     }
 
-    public void apa() {
-        System.out.println(sizeofEngine);
-        System.out.println(licencePlate);
-
-    }
-
     public int getSizeofEngine() {
         return sizeofEngine;
     }

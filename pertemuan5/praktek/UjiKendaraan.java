@@ -7,8 +7,8 @@ public class UjiKendaraan {
 
         sepeda.goStraight();
         sepeda.ringBell();
-        motor.apa();
         kendaraan.turnRight();
-        motor.getSizeofEngine();
+        System.out.println(motor.getSizeofEngine());
+        System.out.println(motor.getLicencePlate());
     }
 }
