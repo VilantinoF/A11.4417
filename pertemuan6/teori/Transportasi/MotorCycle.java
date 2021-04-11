@@ -3,7 +3,7 @@ package Transportasi;
 public class MotorCycle extends MotorVehicle {
     int numGear = 0;
 
-    MotorCycle() {
+    public MotorCycle() {
         
     }
 

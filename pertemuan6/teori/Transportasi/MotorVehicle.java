@@ -4,7 +4,7 @@ public class MotorVehicle extends Vehicle {
     int sizeofEngine = 1;
     String licencePlate = "H 1 IDN";
 
-    MotorVehicle() {
+    public MotorVehicle() {
 
     }
 

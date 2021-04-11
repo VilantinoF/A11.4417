@@ -3,7 +3,7 @@ package Transportasi;
 public class Car extends MotorVehicle {
     boolean seatbelt = false;
 
-    Car() {
+    public Car() {
 
     }
 

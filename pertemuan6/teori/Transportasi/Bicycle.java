@@ -1,7 +1,8 @@
 package Transportasi;
 
 public class Bicycle extends Vehicle {
-    Bicycle() {
+    
+    public Bicycle() {
 
     }
 
