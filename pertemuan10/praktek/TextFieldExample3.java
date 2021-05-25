@@ -46,7 +46,7 @@ class TextFieldExample3 extends Frame implements ActionListener {
         b1.addActionListener(this);
 
         l1 = new Label();
-        l1.setBounds(50, 300, 150, 20);
+        l1.setBounds(100, 400, 200, 50);
 
         add(l2);
         add(t1);
