@@ -2,24 +2,26 @@ import java.util.Scanner;
 
 public class HarpindoKitaApp {
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
-        Karyawan officer = new Karyawan();
         char i = 'w';
-
+        
         while(i != 'q') {
-            System.out.println("Welcome TO Harpindo Kita");
+            Scanner myObj = new Scanner(System.in);
+            System.out.println("Welcome to Harpindo Kita");
             System.out.println("Sign Up");
             System.out.println("1. Karyawan");
             System.out.println("2. Pembeli");
             System.out.println("PRESS '0' TO QUIT");
+            System.out.println("====================");
+            
             int choice = myObj.nextInt();
             if (choice == 1) {
-                System.out.println("Masukkan No KTP Anda :");
-                String noKTP = myObj.nextLine();
-                officer.setNoKTP(noKTP);
-                System.out.println("Masukkan Nama Anda :");
-                String nama = myObj.nextLine();
-                officer.setNama(nama);
+                Karyawan officer = new Karyawan();
+                Mobil mbl1 = new MobilSedan("sedan", 2000000, 4);
+                officer.setNoKTP(100050215);
+                officer.setNama("Vilantino");
+                System.out.println("No KTP : " + officer.getNoKTP());
+                System.out.println("Nama : " + officer.getNama());
+                
                 
             } else if (choice == 2) {
                 System.out.println("Tipe Pembeli : ");
@@ -27,20 +29,15 @@ public class HarpindoKitaApp {
                 System.out.println("2. Borongan");
                 int tCustomer = myObj.nextInt();
                 if (tCustomer == 1) {
-                    System.out.println("Masukkan No KTP Anda :");
-                    String noKTP = myObj.nextLine();
-                    System.out.println("Masukkan Nama Anda :");
-                    String nama = myObj.nextLine();
-                    Pembeli customer = new PembeliIndividu(noKTP, nama);
-                    System.out.println(customer.getNama());
-                    
+                    Pembeli customer = new PembeliIndividu("12091201", "tino");
+                    System.out.println("No KTP : " + customer.getNoKTP());
+                    System.out.println("Nama : " + customer.getNama());
+
+
                 } else {
-                    System.out.println("Masukkan No KTP Anda :");
-                    String noKTP = myObj.nextLine();
-                    System.out.println("Masukkan Nama Anda :");
-                    String nama = myObj.nextLine();
-                    Pembeli customer2 = new PembeliBorongan(noKTP, nama);
-                    System.out.println(customer2.getNama());
+                    Pembeli customer2 = new PembeliBorongan("90101982", "Fernan");
+                    System.out.println("No KTP : " + customer2.getNoKTP());
+                    System.out.println("Nama : " + customer2.getNama());
                 }
             } else if (choice == 0) {
                 break;

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Karyawan {
-    private String noKTP;
+    private int noKTP;
     private String nama;
     ArrayList<Mobil> listMbl = new ArrayList<>();
 
@@ -14,11 +14,11 @@ public class Karyawan {
 
     }
 
-    public void setNoKTP(String noKTP) {
+    public void setNoKTP(int noKTP) {
         this.noKTP = noKTP;
     }
 
-    public String getNoKTP() {
+    public int getNoKTP() {
         return noKTP;
     }
 
